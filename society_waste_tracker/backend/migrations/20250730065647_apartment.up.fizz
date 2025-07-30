@@ -1,0 +1,6 @@
+create_table("apartments") {
+    t.Column("id", "integer", {primary: true})
+    t.Column("name", "string")
+    t.Column("month", "string")
+    t.Column("waste_generated", "integer")
+}

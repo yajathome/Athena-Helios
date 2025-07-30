@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+}
+
+nav {
+    border-bottom: 1px solid #fff;
+}
+
+.content {
+    padding: 2%;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
