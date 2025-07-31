@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "react-router-dom": "^7.7.1"
+  },
+  "name": "athena-helios-anshuman",
+  "version": "1.0.0",
+  "description": "WEW",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anshumancoder/Athena-Helios-Anshuman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anshumancoder/Athena-Helios-Anshuman/issues"
+  },
+  "homepage": "https://github.com/Anshumancoder/Athena-Helios-Anshuman#readme"
+}
