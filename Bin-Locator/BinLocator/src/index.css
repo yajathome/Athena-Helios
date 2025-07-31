@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+input, select {
+  border: 1px solid #ccc;
+}
+
+
+button {
+  cursor: pointer;
+}
