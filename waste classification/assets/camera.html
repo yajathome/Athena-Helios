@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Camera</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; margin-top: 20px; }
+    video, canvas { border: 2px solid black; }
+  </style>
+</head>
+<body>
+  <video id="vid" width="320" height="240" autoplay></video><br><br>
+  <button onclick="capture()">📸 Take Picture</button>
+  <canvas id="canv" width="320" height="240" style="display:none;"></canvas>
+
+  <script>
+    const vid = document.getElementById("vid");
+    const canv = document.getElementById("canv");
+    const ctx = canv.getContext("2d");
+
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => {
+        vid.srcObject = stream;
+      });
+
+    function capture() {
+      ctx.drawImage(vid, 0, 0, canv.width, canv.height);
+      const data = canv.toDataURL("image/png");
+      window.parent.postMessage({ type: "image", image: data }, "*");
+    }
+  </script>
+</body>
+</html>
