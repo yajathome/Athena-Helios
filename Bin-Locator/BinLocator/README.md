@@ -12,6 +12,7 @@ It is a website which is useful for locating dustbins when traveling, it has a d
 4) Has a feature that allows the user to add a location of a dustbin which helps to improve website accuracy and widens its database.
 5) The website is very user friendly and easy to use.
 
-**Demo Link**
+**Demo Link**:
+
 For visiting the website use : https://binlocator.vercel.app
    
