@@ -15,6 +15,9 @@ func (app *Application) Routes() http.Handler {
 	mux.Post("/apartment-register", app.ApartmentRegister)
 	mux.Post("/resident-login", app.ResidentLogin)
 	mux.Post("/resident-register", app.ResidentRegister)
+	mux.Post("/resident-dashboard", app.ResidentDashboard)
+	mux.Post("/resident-log-waste", app.ResidentLogWastes)
+	mux.Post("/apartment-dashboard", app.ApartmentDashboard)
 
 	return mux
 }

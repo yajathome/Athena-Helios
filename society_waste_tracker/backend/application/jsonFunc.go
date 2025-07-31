@@ -7,7 +7,7 @@ import (
 
 type JSONResponse struct {
 	Error   bool                   `json:"error"`
-	Message string                 `json:"message"`
+	Message string                 `json:"error_message"`
 	Data    map[string]interface{} `json:"data,omitempty"`
 }
 

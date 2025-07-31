@@ -1,14 +1,14 @@
 import { useOutletContext } from "react-router-dom"
 
 function ResidentLoginPage() {
-    const {developmentBackendLink, productionBackendLink} = useOutletContext();
+    const {developmentBackendLink, productionBackendLink, setErrorAlert, navigate, setSuccessAlert} = useOutletContext();
 
     const resident_login_submit = (event) => {
         event.preventDefault()
 
         const requestBody = {
-            apartment: event.target.apartment.value,
-            flat: event.target.flat.value,
+            apartment_name: event.target.apartment.value,
+            flat_number: event.target.flat.value,
             password: event.target.password.value,
         }
 
@@ -23,7 +23,15 @@ function ResidentLoginPage() {
         fetch(`${developmentBackendLink}/resident-login`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+                if (data.error) {
+                    console.log(data.error_message)
+                    setErrorAlert(data.error_message)
+                    return
+                }
+                setSuccessAlert("Successfully logged in")
+                sessionStorage.removeItem("apartment")
+                sessionStorage.setItem("resident", JSON.stringify(data.user))
+                navigate("/resident-dashboard")
             })
     }
     return (

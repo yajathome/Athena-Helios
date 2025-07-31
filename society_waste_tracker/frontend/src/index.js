@@ -8,6 +8,9 @@ import ApartmentLoginPage from './pages/ApartmentLogin';
 import ApartmentRegisterPage from './pages/ApartmentRegister';
 import ResidentLoginPage from './pages/ResidentLogin';
 import ResidentRegisterPage from './pages/ResidentRegister';
+import ResidentDashboardPage from './pages/ResidentDashboard';
+import ApartmentDashboardPage from './pages/ApartmentDashboard';
+import Logout from "./pages/Logout"
 
 const router = createBrowserRouter([
   {
@@ -20,6 +23,9 @@ const router = createBrowserRouter([
       {path: "/apartment-register", element: <ApartmentRegisterPage />},
       {path: "/resident-login", element: <ResidentLoginPage />},
       {path: "/resident-register", element: <ResidentRegisterPage />},
+      {path: "/resident-dashboard", element: <ResidentDashboardPage />},      
+      {path: "/apartment-dashboard", element: <ApartmentDashboardPage />},
+      {path: "/logout", element: <Logout />}
     ]
   }
 ])

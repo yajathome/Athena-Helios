@@ -1,7 +1,7 @@
 import { useOutletContext } from "react-router-dom"
 
 function ResidentRegisterPage() {
-    const {developmentBackendLink, productionBackendLink} = useOutletContext();
+    const {developmentBackendLink, productionBackendLink, setErrorAlert, navigate, setSuccessAlert} = useOutletContext();
 
     const resident_register_submit = (event) => {
         event.preventDefault()
@@ -23,7 +23,13 @@ function ResidentRegisterPage() {
         fetch(`${developmentBackendLink}/resident-register`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
-                console.log(data)
+                if (data.error) {
+                    setErrorAlert(data.error_message)
+                    console.log(data.error_message)
+                    return
+                }
+                setSuccessAlert("Successfully created account")
+                navigate("/resident-login")
             })
     }
 
