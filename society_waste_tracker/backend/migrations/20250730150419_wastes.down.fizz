@@ -1,0 +1,4 @@
+drop_table("wastes")
+
+drop_foreign_key("wastes", "wastes_apartment_id_fk", {})
+drop_foreign_key("wastes", "wastes_resident_id_fk", {})
