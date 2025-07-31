@@ -1,0 +1,105 @@
+export const WASTE_CATEGORIES = {
+  stock_paper: {
+    label: 'Stock Paper',
+    icon: '📄',
+    color: 'text-yellow-600',
+    bgColor: 'bg-yellow-50',
+    borderColor: 'border-yellow-200',
+    weight: 5, // grams per item
+  },
+  food_waste: {
+    label: 'Food Waste',
+    icon: '🍽️',
+    color: 'text-red-600',
+    bgColor: 'bg-red-50',
+    borderColor: 'border-red-200',
+    weight: 532,
+  },
+  plastic_bottles: {
+    label: 'Plastic Bottles',
+    icon: '🍼',
+    color: 'text-blue-600',
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-200',
+    weight: 25,
+  },
+  plastic_cutlery: {
+    label: 'Plastic Cutlery',
+    icon: '🍴',
+    color: 'text-blue-600',
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-200',
+    weight: 50,
+  },
+  plastic_wrappers: {
+    label: 'Plastic Wrappers',
+    icon: '📦',
+    color: 'text-blue-600',
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-200',
+    weight: 10,
+  },
+  plastic_packets: {
+    label: 'Plastic Packets',
+    icon: '🛍️',
+    color: 'text-blue-600',
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-200',
+    weight: 20,
+  },
+  chart_paper: {
+    label: 'Chart Paper',
+    icon: '📊',
+    color: 'text-yellow-600',
+    bgColor: 'bg-yellow-50',
+    borderColor: 'border-yellow-200',
+    weight: 120,
+  },
+  disposable_cups: {
+    label: 'Disposable Cups',
+    icon: '🥤',
+    color: 'text-yellow-600',
+    bgColor: 'bg-yellow-50',
+    borderColor: 'border-yellow-200',
+    weight: 60,
+  },
+  pens: {
+    label: 'Pens',
+    icon: '🖊️',
+    color: 'text-purple-600',
+    bgColor: 'bg-purple-50',
+    borderColor: 'border-purple-200',
+    weight: 30,
+  },
+  paper_tissues: {
+    label: 'Paper Tissues',
+    icon: '🧻',
+    color: 'text-yellow-600',
+    bgColor: 'bg-yellow-50',
+    borderColor: 'border-yellow-200',
+    weight: 5,
+  },
+};
+
+export const HOUSE_COLORS = {
+  green: {
+    color: 'text-green-600',
+    bgColor: 'bg-green-50',
+    borderColor: 'border-green-200',
+  },
+  blue: {
+    color: 'text-blue-600',
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-200',
+  },
+  red: {
+    color: 'text-red-600',
+    bgColor: 'bg-red-50',
+    borderColor: 'border-red-200',
+  },
+  yellow: {
+    color: 'text-yellow-600',
+    bgColor: 'bg-yellow-50',
+    borderColor: 'border-yellow-200',
+  },
+};
